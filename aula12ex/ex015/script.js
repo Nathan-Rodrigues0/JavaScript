@@ -22,7 +22,7 @@ function verificar() {
             } else if (idade < 21) {
                 var gênero = 'jovem'
                 img.setAttribute('src', 'jovem-m.png')
-            } else if (idade < 50) {
+            } else if (idade < 60) {
                 var gênero = 'adulto'
                 img.setAttribute('src', 'adulto-m.png')
             } else {
@@ -36,7 +36,7 @@ function verificar() {
             } else if (idade < 21) {
                 var gênero = 'jovem'
                 img.setAttribute('src', 'jovem-f.png')
-            } else if (idade < 50) {
+            } else if (idade < 60) {
                 var gênero = 'adulta'
                 img.setAttribute('src', 'adulta-f.png')
             } else {
