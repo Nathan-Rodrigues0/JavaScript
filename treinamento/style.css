@@ -7,7 +7,31 @@
 }*/
 
 body {
-    background-image: linear-gradient(to bottom, #77E6E4, #C0EAE9);
+    background-image: linear-gradient(to bottom, #4f9897, #C0EAE9);
     height: 100vh;
     
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.491);
+}
+
+div {
+    background-color: white;
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+div#res {
+    width: 25%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
