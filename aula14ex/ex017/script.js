@@ -1,5 +1,4 @@
 function calcular() {
-    var
     var num = Number(n1.value)
     var res = window.document.getElementById('res')
     if (n1 < 2) {
