@@ -1,8 +1,8 @@
 function calcular() {
     var num = document.getElementById('n1')
-    var res = window.document.getElementById('res')
+    var tab = document.getElementById('tab')
     if (num.value.length == 0) {
-       window.alert('Por favor, digite um número')
+       window.alert('Por favor, digite um número!')
     } else {
         var n = Number(num.value)
         var c =  1
