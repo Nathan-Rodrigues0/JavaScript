@@ -2,7 +2,7 @@
 function fatorial(num) {
     var fat = 1
     for(var f = num; f > 1; f--) {
-        // fat = fatoral *= vezes igual a 'c' = valor
+        // fat = fatoral *= vezes igual a 'f' = valor
         fat *= f
     }
     return fat
