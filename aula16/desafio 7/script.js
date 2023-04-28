@@ -1,5 +1,5 @@
 var num = document.getElementById('inum')
-Number(num.value)
+var n = Number(num.value)
 
 
 function adicionar() {
