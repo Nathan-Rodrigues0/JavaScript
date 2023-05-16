@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(0, 255, 255, 0.11);
+}
+
+h1 {
+    color: rgb(127, 213, 41);
+    text-align: center;
+}
+
+div {
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px  rgba(127, 213, 41, 0.164);
+}
+
+select {
+    width: 150px;
+}
