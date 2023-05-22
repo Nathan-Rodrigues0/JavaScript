@@ -21,3 +21,9 @@ div {
 select {
     width: 150px;
 }
+
+a, footer {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
