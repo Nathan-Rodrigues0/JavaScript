@@ -1,9 +1,12 @@
 var num = document.getElementById('inum')
 var lista = document.querySelector('select#ilista')
 var res = document.getElementById('res')
-var valores = []
+var valores = [] //vetor para analisar os dados
+
+//antes! colocar variaveis para transformar e manipular os controles
 
 function adicionar() {
+    // verificando se é um número e que não estiver na lista
     if(isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value))
         let item = document.createElement('option')
@@ -16,9 +19,10 @@ function adicionar() {
 num.value = ''
 num.focus()
 }
-// ! = não
+
 
 function isNumero(n) {
+    //se o número for maior e o número for menor que 100
     if(Number(n) >= 1 && Number(n) <= 100) {
     return true
 } else {
@@ -27,6 +31,7 @@ function isNumero(n) {
 }
 
 function inLista(n, l){
+    //se na lista for diferente de -1 (valor nao encontrado) / ! = não
     if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
