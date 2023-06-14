@@ -38,3 +38,7 @@ a {
 p {
     margin-top: 25px;
 }
+
+h1 {
+    color: rgba(255, 0, 0, 0.447);
+}
