@@ -8,15 +8,22 @@ var valores = [] //vetor para analisar os dados
 function adicionar() {
     // verificando se é um número e que não estiver na lista
     if(isNumero(num.value) && !inLista(num.value, valores)) {
+        //valores esta sendo adicionado no vetor que esta recendo o Number(num.value) = um número
         valores.push(Number(num.value))
+        //criando um item = option
         let item = document.createElement('option')
+        //dando valor ao item em um texto
         item.text = `Valor ${num.value} adicionado`
+        //adicionando na lista o item
         lista.appendChild(item)
+        //zerando o res
         res.innerHTML = ''
 } else {
     window.alert('Valor inválido ou já encontrado na lista.')
 }
+//deixando o (num) em branco inicialmente / apagando automaticamente
 num.value = ''
+//voltando ao (num) para ser clicavel
 num.focus()
 }
 
@@ -40,14 +47,17 @@ function inLista(n, l){
 }
 
 function finalizar() {
+    //se o vetor estiver vazio
     if (valores.length == 0 ) {
         window.alert('Adicione valores antes de finalizar')
     } else {
         let tot = valores.length
+        //posições de valores (númericos)
         let maior = valores[0]
         let menor = valores[0]
         let soma = 0
         let media = 0
+        //for = var pos (posições) in = em valores
         for(let pos in valores) {
             soma += valores[pos]
             if (valores[pos] > maior) 
