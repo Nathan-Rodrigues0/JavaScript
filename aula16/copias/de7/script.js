@@ -5,7 +5,10 @@ var valores = []
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value)) {
-        window.alert('Tudo ok!')
+        valores.push(Number(num.value))
+        var item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado`
+        lis.appendChild(item)
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
