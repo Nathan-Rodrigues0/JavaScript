@@ -8,7 +8,7 @@ var valores = [] //vetor para analisar os dados
 function adicionar() {
     // verificando se é um número e que não estiver na lista
     if(isNumero(num.value) && !inLista(num.value, valores)) {
-        //valores esta sendo adicionado no vetor que esta recendo o Number(num.value) = um número
+        //valores esta sendo adicionado no vetor que esta recebendo o Number(num.value) = um número
         valores.push(Number(num.value))
         //criando um item = option
         let item = document.createElement('option')
